@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clayful a website created by Diana Vlad <3</title>
+
+    <!-- Links bootstrap  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/logo.svg" alt="clayful logo">
+
+            <!-- This is the nav bar -->
+            <!-- Need to add links to pages and buttons here-->
+
+            <ul>
+                <li>Shop</li>
+                <li>Our story</li>
+                <li>Blog</li>
+                <li>Search</li>
+                <button class="secondary-button">Login</button>
+                <li>Cart</li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <!-- Making a two column layout with p h1 and button on left and img box on right -->
+            <div class="hero-section">
+                <div class="hero-box">
+                <h1>Pottery made by hand</h1>
+                <p class="subheading">Explore our unique collection of handmade pottery crafted with love from Australia.</p>
+                <button class="primary-button">Shop now</button>
+            </div>
+            <div class="hero-img"></div>
+        </div>
+            <section class="newsletter-section">
+                <div class="newsletter-content">
+                    <h2>Subcribe to our newsletter</h2>
+                    <p class="subheading">Receive a 10% discount on your first order</p>
+                    <div class="crying">
+                    <input class="text-field"
+                    type="email"
+                    placeholder="Your email here">
+                    <button class="primary-button">Get discount</button>
+                    </div>
+                </div>
+            </section>
+            <section class="products">
+                <h2>Made to order</h2>
+                <div class="wavy-line">
+                    <img src="assets/wave1svg.svg" alt="">
+                </div>
+                <div class="product-cards-container">
+                <div class="product-card">
+                    <img src="assets/terracotta-ptcher.jpg" alt="a terracotta clay pitcher with a curved handle">
+                    <p class="product-desc">Terracotta clay pitcher</p>
+                    <p class="caption">Amphora style 2 litres</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/dinner-set.jpg" alt="dinner set of two white bowls and a plate">
+                    <p class="product-desc">Dinner set for one</p>
+            
+                    <p class="caption">Set of 2 bowls and a plate</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="assets/espresso-cup.png" alt="a small espresso cup with a crack on it">
+                    <p class="product-desc">Espresso cup</p>
+                
+                    <p class="caption">Uniquely cracked ceramic</p>
+                </div>
+                </div>
+            </section>
+            <div class="white-space"></div>
+            <section class="faq">
+                <div class="faq-headline">
+                <h2>Frequently asked questions</h2>
+                <img src="assets/heart.svg">
+                </div>
+
+                <!-- FAQ items -->
+
+            <!-- Bootstrapping accordion  -->
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What materials are used in your pottery?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We use high-quality, locally sourced clay that reflects the natural beauty of Australian landscapes.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How do I care for my pottery?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Wash it with lukewarm water, that's it.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Do you ship internationally?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Yes! Our customers can enjoy wonderful creations from a range of locations. We ship to UK, USA, Europe. We're working on shipping to more locations soon!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        How can I track my order?
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Orders can be tracked via the number provided by the delivery company you completed your purchase with at checkout.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Can I return or exchange a purchase?
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Of course, we offer a 30 day return period with every order. For more information go on our Returns page.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            <section class="contact">
+                <div class="contact-form">
+                    <h2>Still have questions?</h2>
+                    <p class="subheading">Get in touch with us today.</p>
+
+                    <!-- This is the form 
+                    It has inputs with no labels and a message input
+                    and the button is outside the fielset but inside the form -->
+                    <form action="form-page">
+                        <fieldset>
+                            <input type="name"
+                            name="name"
+                            id="name"
+                            placeholder="Diana Matcha">
+
+                            <input type="email"
+                            name="email"
+                            id="email"
+                            placeholder="dianamatcha19@email.com">
+
+                            <input type="tel" name="phone" id="phone" placeholder="07411101169">
+
+                            <textarea id="msg" name="customer-message"></textarea>
+                        </fieldset>
+                        <button type="submit" class="primary-button">Sent message</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="featured">
+                <h2>Featured in</h2>
+                <div class="featured-logos">
+                    <img src="assets/logo1.svg" alt="Architectural Digest">
+                    <img src="assets/logo2.svg" alt="Harpeers Bazaar">
+                    <img src="assets/logo3.svg" alt="Vogue Living">
+                </div>
+            </section>
+        </main>
+        <footer>
+          
+            <h5>Contact</h5>
+            <p class="footer-item">Email: customers@clayful.com</p>
+            <p class="footer-item">Phone: 0223494040</p>
+          
+
+          
+            <h5>Stay connected</h5>
+            <p class="footer-item">Facebook</p>
+            <p class="footer-item">Instagram @clayfulofficial</p>
+            <p class="footer-item">Pinterest</p>
+         
+
+          
+            <h5>Legal stuff</h5>
+            <p class="footer-item">Privacy policy</p>
+            <p class="footer-item">Terms of service</p>
+    
+            
+            <!-- Add my links here  -->
+
+            <h5>Designed by</h5>
+            <p class="footer-item">Diana Vlad 2024</p>
+            <p class="footer-item">Behance</p>
+            <p class="footer-item">LinkedIn</p>
+            <p class="footer-item">Email</p>
+        </footer>
+
+        <!-- Links bootstrap  -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+</html>
