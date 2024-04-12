@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    color: #5A4D43;
+}
+body {
+    background-color: #FAEFE4;
+}
+
+/* Navigation bar  */
+
+nav img {
+    max-width: 150px;
+    padding: 1em 0em;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0em 1.2em;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2.4em;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Buttons  */
+
+.secondary-button {
+    background-color: #BCA28E;
+    font-weight: 700;
+    padding: 0.4em 2.4em;
+    border-radius: 30px;
+    color: white;
+    border-style: hidden;
+    font-size: 1.2rem;
+}
+
+.primary-button {
+    background-color: #FEA57D;
+    font-weight: 700;
+    padding: 0.4em 2.4em;
+    border-radius: 30px;
+    color: white;
+    border-style: hidden;
+    font-size: 1.2rem;
+}
+
+button.primary-button {
+    background-color: #FEA57D;
+    font-weight: 700;
+    padding: 0.4em 2.4em;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Buttons hover  */
+
+button.primary-button:hover {
+    background-color: #5A4D43; /* Adjust the color on hover if needed */
+}
+
+button.secondary-button:hover {
+    background-color: #5A4D43;
+}
+
+/* Hero section  */
+/* Making a two column layout with p h1 and button on left and img box on right */
+
+.hero-section {
+    margin: 3.0em 1.0em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.hero-box {
+    flex: 1;
+    padding: 2.0em;
+    height: 500px;
+}
+
+/* Making spaces between elements  */
+
+.hero-box p, button {
+    padding-bottom: 24px;
+}
+
+.hero-box h1, p {
+    padding-bottom: 12px;
+}
+
+/* Background contain made it not crop I almost kms  */
+
+.hero-img {
+    background-image: url(assets/hero-img.png);
+    background-position: center;
+    background-size: contain;
+    flex: 1;
+    background-repeat: no-repeat;
+    margin-right: 2.4em;
+}
+
+/* Font sizes and style  */
+
+h1 {
+    font-size: 2.8rem;
+}
+.subheading {
+    font-size: 1.2rem;
+    font-weight: 450;
+    opacity: 0.7;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+/* Newsletter  */
+
+.newsletter-content {
+    background-color: #FAEFE4;
+    border-radius: 30px;
+    width: 600px;
+    margin: 3em 1em;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(assets/star.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: 8%;
+}
+
+/* Spaces between elements  */
+
+.newsletter-content p, button {
+    padding-bottom: 12px;
+}
+
+.newsletter-content h2 {
+    padding-bottom: 8px;
+}
+
+/* I dont know how to make the background  */
+
+.text-field {
+    border-radius: 12px;
+    padding: 0.6em 2.0em;
+    border-color: #BBBEA0;
+    border-style: solid;
+    font-size: 14px;
+}
+
+/* Position relative made it go across...  */
+
+.newsletter-section {
+    padding: 2.0em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(assets/frame1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 839px;
+    position: relative;
+}
+
+/* Made to order */
+
+.products {
+    margin:  3.0em;
+    margin-top: 0;
+}
+
+.wavy-line {
+    margin: 8px 0px;
+}
+
+/* Wrapped the 3 cards in a container then layed them out using flex  */
+
+.product-cards-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.product-card {
+    background-color: #FFFBF6;
+    padding: 12px;
+    border-radius: 20px;
+    width: 30%; /* Adjust the width as needed */
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-desc {
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.caption {
+    margin-top: -20px;
+}
+
+/* FAQ */
+
+.white-space {
+    padding: 5em;
+    background-image: url(assets/ring.png);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: contain;
+    background-position: top right;
+}
+
+.faq-headline {
+    display: flex;
+    gap: 24px;
+    padding-left: 2.5em;
+}
+
+.faq-headline img {
+    margin-top: -80px;
+
+}
+
+/* Bootstrap accordion  */
+
+.accordion {
+    padding: 30px;
+    background-image: url(assets/stars.png);
+    background-repeat: no-repeat;
+    background-position: bottom right 10px;
+}
+
+.accordion-item {
+    margin-bottom: 12px;
+    background-color: transparent;
+    border: transparent;
+    border-radius: 20px;
+}
+
+.accordion-button {
+    border: 2px solid #BBBEA0;
+    border-radius: 20px;
+    background-color: #FAEFE4;
+    max-width: 600px;
+    
+}
+
+.accordion-body {
+    background-color: transparent; /* Match the background color of your page */
+    max-width: 600px;
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+    background-color: #FAEFE4; /* Keep the background color the same on hover and focus */
+}
+
+/* Contact Form Styles */
+
+.contact {
+    padding: 3em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #5A4D43;
+}
+
+.contact-form p.subheading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #5A4D43;
+    opacity: 0.7;
+    margin-bottom: 2em;
+}
+
+/* Form Styles */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+input,
+textarea {
+    width: 100%;
+    max-height: fit-content;
+    padding: 0.6em 1em;
+    border: 2px solid #BBBEA0;
+    border-radius: 12px;
+    margin-bottom: 1em;
+    font-size: 14px;
+    resize: none;
+}
+
+.contact {
+    padding: 24px;
+    background-image: url(assets/frame2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+.contact-form {
+    background-color: #FAEFE4;
+    padding: 60px;
+    border-radius: 24px;
+}
+
+/* Featured in section  */
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12em;
+    margin-bottom: 12em;
+}
+
+.featured-logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+    gap: 4rem;
+}
+
+/* Footer  */
+
+.footer-item, footer {
+    color: white;
+}
+
+.footer {
+    background-color: #5A4D43;
+}
